@@ -12,7 +12,10 @@ body {
     /* background-color: #fee300; */
     background-image: linear-gradient(109.6deg, rgba(254, 253, 205, 1) 11.2%, rgba(163, 230, 255, 1) 91.1%);
 }
-
+a{
+    list-style-type: none;
+    color: #030308;
+}
 .section-center {
     position: relative;
     width: 600px;
@@ -329,8 +332,20 @@ body {
     bottom: 3px;
     display: block;
     z-index: 9;
+    cursor: pointer;  
 }
-
+.building-left :hover{
+    animation: sunShine 3.5s linear infinite;
+    transform: scale(1.2)  translateY(-2px);
+}
+.building-left h3{
+    margin:4px;
+    font-size: 12px;
+    z-index: 3;
+    padding-bottom: 4px;
+    position: absolute;
+    bottom: 4px;
+}
 .building-left span {
     position: absolute;
     left: 0;
@@ -427,8 +442,19 @@ body {
     bottom: 0;
     display: block;
     z-index: 8;
+    cursor: pointer;
 }
-
+.building-right :hover{
+    animation: sunShine 3.5s linear infinite;
+    transform: scale(1.2)  translateY(-2px);
+}
+.building-right h3{
+    font-size: 12px;
+    z-index: 3;
+    position: absolute;
+    bottom:44px;
+    right:16px;
+}
 .building-right span {
     position: absolute;
     right: 18px;
@@ -728,18 +754,27 @@ body {
     border-radius: 22px;
     padding: 5px 12px;
 position: relative;
+cursor: pointer;
 
 }
 .sun h2{
     margin: 2px;
     font-size: 12px;
     z-index: 3;
-   
+   cursor: pointer;
     
 
 }
+.sun h1:hover{
+animation: sunShine 3.5s linear infinite;
 
+    transform: scale(1.2)  translateY(-2px);
+}
 .sun span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
     position: absolute;
     left: 0;
     top: 0;
@@ -750,7 +785,9 @@ position: relative;
     height: 37px;
     animation: sunShine 3.5s linear infinite;
 }
-
+.sun i{
+    
+}
 @keyframes sunShine {
     0% {
         transform: scale(1);
@@ -828,16 +865,19 @@ position: relative;
 }
 
 .cloud-middle {
+    display: flex;
     position: absolute;
     left: 285px;
     top: 117px;
     z-index: 4;
-    width: 40px;
+    width: 80px;
     height: 28px;
     animation: cloudMove 1.7s linear infinite;
     animation-delay: 0.4s;
 }
-
+.cloud-middle i{
+  font-size: 14px;
+}
 .cloud-middle span {
     position: absolute;
     right: 0;
@@ -851,8 +891,12 @@ position: relative;
 }
 
 .cloud-middle span:nth-child(2) {
+    display: flex;
+    align-items: center;
+   font-size: large;
+   z-index: 5;
     right: auto;
-    left: 0;
+    left: 0.5;
     top: 4px;
     width: 17px;
     height: 24px;
@@ -867,12 +911,16 @@ position: relative;
 
 .cloud-middle span:nth-child(3) {
     right: 14px;
-    top: auto;
+    top:2px;
     bottom: 0;
-    width: 10px;
-    height: 8px;
-    border-radius: 0;
-    border: none;
+    width:52px;
+    height: 26px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 0px;
+    border-top:2px solid #030308;
+    border-right: none;
     border-bottom: 2px solid #030308;
 }
 
