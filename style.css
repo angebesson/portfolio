@@ -746,7 +746,7 @@ a{
     flex-direction: column;
     align-items: center;
     position: absolute;
-    left: 35%;
+    left: 38%;
     top: 30px;
     z-index: 4;
 }
@@ -1958,6 +1958,9 @@ footer{
 
 /* responsive */
 @media(max-width:768px){
+    .sun{
+        left: 35%;
+    }
     .building-right{
         right: 15%;
     }
