@@ -4,7 +4,10 @@
     margin: 0;
     padding: 0;
 }
-
+@font-face {
+    font-family: WhiteBoard ;
+    src: url(./resources/DryWhiteboardMarker-Regular.ttf);
+}
 body {
     width: auto;
     display:flex;
@@ -2020,26 +2023,12 @@ footer{
 }
 
 /* Proyects page */
-h1{
-    display: block;
-    margin: 2px;
-    font-size: 22px;
-    z-index: 3;
-    cursor: pointer;
-}
+
 .proyect-main{
     background-color: #df6e12;
     height: 400px;
     width: 90%;
     border-radius: 20px;
-    /* display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "desc1 proy1"
-      "desc2 proy2"
-      "desc3 proy3";  */
     justify-content: center; 
     align-content: center; 
     justify-items: center; 
@@ -2055,18 +2044,29 @@ h1{
 }
 .description{
     border: 2px solid #030308;
+    border-radius:8px;
     margin: 10px;
     color: #fafafa;
     background-color: #030308;
-    width: 30%;
+    width: 40%;
     padding: 20px;
+   font-family: WhiteBoard, sans-serif;
+   text-transform: uppercase;
+   
 }
 .window{
     border: 2px solid #030308;
     background-color: #df6e12;
     cursor: pointer;
-    width: 150px;
-    height: 80px;
+   
+    height: 90px;
     margin: 10px;
+    box-shadow:    28px 28px 56px #d9d9d9,
+    -28px -28px 56px #e7e7e7;
+    overflow: hidden;
+}
+
+.window img{
     
+    height: 95px;
 }
