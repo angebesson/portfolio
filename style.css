@@ -2018,3 +2018,55 @@ footer{
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Proyects page */
+h1{
+    display: block;
+    margin: 2px;
+    font-size: 22px;
+    z-index: 3;
+    cursor: pointer;
+}
+.proyect-main{
+    background-color: #df6e12;
+    height: 400px;
+    width: 90%;
+    border-radius: 20px;
+    /* display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "desc1 proy1"
+      "desc2 proy2"
+      "desc3 proy3";  */
+    justify-content: center; 
+    align-content: center; 
+    justify-items: center; 
+    align-items: center; 
+  
+    padding: 20px 0px;
+}
+.content-proyect{
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+}
+.description{
+    border: 2px solid #030308;
+    margin: 10px;
+    color: #fafafa;
+    background-color: #030308;
+    width: 30%;
+    padding: 20px;
+}
+.window{
+    border: 2px solid #030308;
+    background-color: #df6e12;
+    cursor: pointer;
+    width: 150px;
+    height: 80px;
+    margin: 10px;
+    
+}
