@@ -8,7 +8,7 @@ const estudios = ()=>{
     alert("Acá van estudios")
 }
 const experiencia = ()=>{
-    alert("Acá van proyectos")
+   
 }
 
 const about = ()=>{
