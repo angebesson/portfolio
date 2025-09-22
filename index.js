@@ -12,7 +12,7 @@ const experiencia = ()=>{
 }
 
 const about = ()=>{
-    alert("aca va about")
+    alert("Me interesa traducir ideas en código y soluciones simples")
 }
 
 formacion.addEventListener("click",estudios);
