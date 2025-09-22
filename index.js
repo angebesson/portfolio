@@ -10,10 +10,23 @@ const estudios = ()=>{
 const experiencia = ()=>{
    
 }
-
-const about = ()=>{
-    alert("Me interesa traducir ideas en código y soluciones simples")
+const about = () => {
+    document.getElementById('modal-about').style.display = 'block';
 }
+
+// Agregar funcionalidad para cerrar el modal
+document.querySelector('.close').addEventListener('click', function() {
+    document.getElementById('modal-about').style.display = 'none';
+});
+
+// Cerrar al hacer click fuera del modal
+window.addEventListener('click', function(event) {
+    const modal = document.getElementById('modal-about');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
 
 formacion.addEventListener("click",estudios);
 proyectos.addEventListener("click",experiencia);
