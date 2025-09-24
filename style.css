@@ -23,6 +23,16 @@ a{
     list-style-type: none;
     color: #030308;
 }
+.cv{
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 .section-center {
     position: relative;
     width: 80%;
@@ -1166,7 +1176,10 @@ animation: sunShine 3.5s linear infinite;
     display: block;
     z-index: 4;
 }
+.cv{
+    position: absolute;
 
+}
 .fish-wrapper.right {
     left: 70%;
     bottom: 70px;
