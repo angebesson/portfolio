@@ -2111,7 +2111,7 @@ footer{
 .comic {
   display:flex;
   flex-wrap:wrap;
-  font-family:'Comic Sans', cursive;
+  font-family:'Patrick Hand', cursive;
   padding:1vmin;
 }
 
@@ -2125,6 +2125,8 @@ footer{
   margin:1vmin;
   overflow:hidden;
   position:relative;
+   font-size: clamp(14px, 2.5vw, 18px); /* Texto responsive */
+  line-height: 1.4; /* Mejor espaciado */
 }
 .panel img{
     cursor: pointer;
@@ -2139,6 +2141,7 @@ footer{
   border:solid 2px #000;
   margin:0;
   padding:3px 10px;
+  font-size: 0.9em;
 }
 
 .top-left {
