@@ -1176,10 +1176,7 @@ animation: sunShine 3.5s linear infinite;
     display: block;
     z-index: 4;
 }
-.cv{
-    position: absolute;
 
-}
 .fish-wrapper.right {
     left: 70%;
     bottom: 70px;
@@ -2034,7 +2031,12 @@ footer{
     padding: 0;
     box-sizing: border-box;
 }
-
+h4{
+ margin: 2px;
+    font-size: 12px;
+    z-index: 3;
+   cursor: pointer;
+}
 /* Proyects page */
 
 .proyect-main{
