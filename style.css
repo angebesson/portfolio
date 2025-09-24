@@ -2147,7 +2147,12 @@ footer{
   top:-2px;
   transform:skew(-15deg);
 }
-
+.center {
+     left:6px;
+  position:absolute;
+  top:40px;
+  transform:skew(-15deg);
+}
 .bottom-right {
   bottom:-2px;
   position:absolute;
