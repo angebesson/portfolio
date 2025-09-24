@@ -2193,8 +2193,7 @@ h4{
 }
 /* Proyects page 2 */
 
-.comic,
-.comic *  {
+.comic  {
   display:flex;
   flex-wrap:wrap;
   font-family:'Patrick Hand', cursive  !important;
